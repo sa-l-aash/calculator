@@ -20,3 +20,8 @@ function calculate() {
   //the code below replaces the input given with the answer after the calculation has been done
   document.getElementById("result").value = result;
 }
+// this function deletes the last character 
+function deleteLastCharacter() {
+  var result = document.getElementById('result');
+  result.value = result.value.slice(0, -1);
+}
